@@ -115,6 +115,10 @@ ReactDOM.render(h1, document.getElementById('root'));
 
 ![hello_world](https://firebasestorage.googleapis.com/v0/b/codegrit-images.appspot.com/o/codegrit-react%2FLesson01%2Fhello_world.png?alt=media&token=3e263d98-fd62-4833-b12f-b7e1709b0023)
 
+- jsFiddleを利用した例:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/dzycb92q/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 ### Reactコンポーネントの作成
 
 さてここまでは、作成したReactエレメントを直接反映するようにしたのですが、実際のReactアプリではコンポーネント、特にAppコンポーネントを反映することが一般的です。
@@ -157,6 +161,10 @@ ReactDOM.render(
 
 再度 "http://localhost:3000/" を開いてみましょう。先程と同様にHello Worldと表示されているはずです。
 
+- jsFiddleを利用した例
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/wrfdba2z/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 ### プロパティ(Props)を渡す
 
 さて、最後にもう少しだけ前に進みましょう。先程のReact.createElementの説明の部分で2つ目の引数に”プロパティ"とあったのを覚えているでしょうか？ Reactではこのプロパティのことを一般的に"Property"を省略して"Prop"と言います。またプロパティは一つではなく複数指定できますので`Proos`とsをつけて複数形で言うことが普通です。Reactでは、あるエレメントやコンポーネントからその子要素に当たる要素に対して、様々なPropsを引き渡して表示を操作することができます。ここでは"Hello World"のWorldの部分をPropsを利用して変更できるようにしてみましょう。親要素、親コンポーネントから渡されたProposには、`this.props`でアクセスすることができます。
@@ -192,6 +200,10 @@ ReactDOM.render(RootReactElement, document.getElementById('root'));
 再度、ブラウザを開いてみましょう。"Hello 世界"と表示されていれば成功です。
 
 ![hello_sekai](https://firebasestorage.googleapis.com/v0/b/codegrit-images.appspot.com/o/codegrit-react%2FLesson01%2Fhello_sekai.png?alt=media&token=93fdfb65-471d-42fb-88a5-3157cbdf589b)
+
+- jsFiddleを利用した例
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/4bzjct81/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Propsについては、レッスン3以降について更に詳しく見ていきますがまずは、Propsを渡すことで子要素や、子コンポーネントの表示を変更することができるということだけ覚えておきましょう！
 
